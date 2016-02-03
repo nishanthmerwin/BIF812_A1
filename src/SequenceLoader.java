@@ -4,6 +4,7 @@ import java.nio.file.Paths;
 
 import javax.swing.JFileChooser;
 
+///TEST
 public abstract class SequenceLoader {
 
 	protected String sequence;
@@ -29,7 +30,7 @@ public abstract class SequenceLoader {
 	public void loadSequenceFromFile(){
 		//the next two lines show the dialog
 		final JFileChooser fc = new JFileChooser();
-		int returnVal = fc.showOpenDialog(null);
+		// int returnVal = fc.showOpenDialog(null);
 		//pass the selected file to the loadSequenceFromFile method
 		loadSequenceFromFile(fc.getSelectedFile().getAbsolutePath());
 	}
